@@ -1,0 +1,30 @@
+.DS_Store
+.playwright-mcp/
+.vercel/
+.next/
+node_modules/
+out/
+.env
+.env*.local
+# Google service-account keys — never commit
+usacars-*.json
+google-credentials*.json
+*.service-account.json
+.google/
+# Client records from /admin/clients — personal data, never commit
+.crm-data/
+.inventory-data/
+tsconfig.tsbuildinfo
+# Vehicle photos — hundreds of MB of JPEGs that would bloat every clone and
+# stay in history forever. They live on the VPS and are uploaded through
+# /admin/inventory, so the repo carries the code that serves them, not the
+# files themselves.
+/public/inventory/
+/public/sold/
+# Raw photo archive used as import source for /admin/inventory — not part of the site.
+/Тачанки-Баранки 2/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.vercel
